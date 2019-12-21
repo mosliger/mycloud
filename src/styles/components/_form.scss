@@ -1,0 +1,94 @@
+
+// ===========================
+// label
+// ===========================
+.form-label {
+	// @extend .font-desc-thai;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: normal;
+  min-height: 13px;
+  color: $gray1;
+  
+}
+// ===========================
+// Input
+// ===========================
+.form-input {
+  line-height: 14px;
+  height: 40px;
+  border-radius: 3px;
+  width: 100%;
+  padding: 6px 12px;
+  color: $gray1;
+  font-size: 14px;
+  line-height: 14px;
+  background: #fff;
+  // box-shadow: none;
+  // box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border: 1px solid $gray3;
+  @include transition(0.3s);
+  &:focus{
+    border: 1px solid $blue2;
+    outline: none;
+    box-shadow: 0 0 3px $blue2;
+  }
+  // &.small{
+
+  // }
+  &[disabled]{
+    background: #eee;
+  }
+}
+input.form-input{
+  line-height: 14px;
+  // height: 34px;
+}
+input.form-input:focus {
+    background-color: #f8f8f8;
+        border: 1px solid $primary;
+    box-shadow: 0 0 3px $primary;
+}
+
+button.button{outline: none;}
+
+.dropdown{
+  position: relative;
+  select {
+    @extend .font-en;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid $gray3;
+    appearance: button;
+    outline: none;
+    border-radius: 0;
+    option {padding: 10px;}
+  }
+  &:before{
+    content: "\f107";
+    font-family: 'FontAwesome';
+    position: absolute;
+    color: $gray2;
+    right: 10px;
+    font-size: 20px;
+    line-height: 45px;
+    pointer-events: none;
+  }
+}
+
+.pagination{
+  @include clearul();
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  align-items: center;
+  li{
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid $gray3;
+      a{color: $gray1;}
+      &.active{background-color: $gray1; a{color: $white;}}
+      &:last-child,&:first-child{border: none; font-size: 28px;}
+  }
+}

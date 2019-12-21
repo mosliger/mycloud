@@ -1,0 +1,50 @@
+/**
+ * Transtate
+ */
+@mixin translateX($position){
+	-webkit-transform: translateX($position);
+    -moz-transform: translateX($position);
+    transform: translateX($position);
+}
+
+@mixin translateY($position){
+	-webkit-transform: translateY($position);
+    -moz-transform: translateY($position);
+    transform: translateY($position);
+}
+
+@mixin translate3d($x: 0, $y: 0, $z: 0){
+	-webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+@mixin translateNevigation($position){
+  -webkit-transform: translateY($position);
+    -moz-transform: translateY($position);
+    transform: translateY($position);
+    transition: opacity 800ms 100ms cubic-bezier(0.25, 0.1, 0.48, 0.24), 
+    transform 1000ms cubic-bezier(0, 0, 0.35, 1.49);
+    -o-transition: opacity 800ms 100ms cubic-bezier(0.25, 0.1, 0.48, 0.24), transform 1000ms cubic-bezier(0, 0, 0.35, 1.49);
+    -moz-transition: opacity 800ms 100ms cubic-bezier(0.25, 0.1, 0.48, 0.24), transform 1000ms cubic-bezier(0, 0, 0.35, 1.49);
+    -webkit-transition: opacity 800ms 100ms cubic-bezier(0.25, 0.1, 0.48, 0.24), transform 1000ms cubic-bezier(0, 0, 0.35, 1.49);
+}
+
+/**
+ * Rotate
+ */
+ @mixin rotateX($deg){
+ 	-webkit-transform: rotateX($deg);
+     -moz-transform: rotateX($deg);
+     transform: rotateX($deg);
+ }
+ @mixin rotateY($deg){
+   -webkit-transform: rotateY($deg);
+     -moz-transform: rotateY($deg);
+     transform: rotateY($deg);
+ }
+@mixin rotate3d($x: 0, $y: 0, $z: 0){
+	-webkit-transform: rotate3d($x, $y, $z);
+    -moz-transform: rotate3d($x, $y, $z);
+    transform: rotate3d($x, $y, $z);
+}

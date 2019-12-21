@@ -1,0 +1,71 @@
+section.price {
+  @include title-section();
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  > .container .wrap-items {
+    border-top: 3px solid $primary;
+    padding-top: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    > .item {
+      margin: 0 16px;
+      display: inline-block;
+      width: 392px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+      background-color: $white;
+      text-align: center;
+      padding: 30px 70px;
+      margin-bottom: 50px;
+      @include BREAKPOINT(M) {
+        max-width: 392px;
+        width: 100%;
+        padding: 30px 50px;
+      }
+      h3 {
+        font-family: Prompt;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.54;
+        color: $primary;
+      }
+      .detail {
+        font-family: Sarabun;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.28;
+        color: $gray2;
+      }
+      hr {
+        height: 0;
+        border: solid 3px #1bab84;
+      }
+      .name {
+        font-family: Prompt;
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 1.53;
+        color: $gray1;
+        margin-top: 20px;
+      }
+      .price {
+        font-family: Prompt;
+        font-size: 30px;
+        line-height: 1.53;
+        color: $primary;      
+      }
+    }
+  }
+  > .container > p {
+    text-align: center;
+    margin: 0 0 80px 0;
+    font-family: Sarabun;
+    font-size: 18px;
+    line-height: 1.28;
+    color: $gray2;
+  }
+}

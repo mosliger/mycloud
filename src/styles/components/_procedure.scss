@@ -1,0 +1,121 @@
+.procedure {
+ padding-top: 80px;
+ padding-bottom: 30px;
+ > .container {
+   margin-bottom: 50px;
+   @include BREAKPOINT(M) {
+    padding: 0;
+  }
+ }
+  h2 {
+    font-family: Prompt;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.53;
+    color: $primary;
+    margin-bottom: 30px;
+    @include BREAKPOINT(M) {
+      padding: 0 10px;
+    }
+  }
+  .row > div {
+    @include BREAKPOINT(M) {
+      margin-bottom: 50px;
+     }
+  }
+
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    > .head {
+      display: block;
+      padding: 20px;
+      background: #1bab84;
+      font-family: Prompt;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: left;
+      color: $white;
+      margin-bottom: 28px;
+      overflow: hidden;
+      position: relative;
+      @include BREAKPOINT(M) {
+        padding: 20px 10px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 28px;
+        right: 0;
+        width: 40px;
+        height: 64px;
+        background: $white;
+        z-index: 2;
+        transform: rotate(60deg) scale(2);
+      }
+    }
+    > p {
+      padding: 0;
+      margin: 0 0 20px 0;
+      font-family: Sarabun;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $gray2;
+      @include BREAKPOINT(M) {
+        padding: 0 10px;
+      }
+    }
+    > .wrap-image {
+      flex: 1 1 auto;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      > img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  .wrap-ship > .item-ship {
+    margin-right: 18px;
+    margin-bottom: 50px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    @include BREAKPOINT(SM) {
+      width: 120px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+    }
+    > .wrap-image {
+      display: inline-block;
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 100%;
+      background-size: cover;
+      background-position: center;
+      @include BREAKPOINT(SM) {
+        width: 100px;
+        height: 100px;
+      }
+      
+    }
+    > .name {
+      margin-top: 20px;
+      font-family: Prompt;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.25;
+      letter-spacing: 1.41px;
+      text-align: center;
+      color: $primary;
+    }
+  }
+}

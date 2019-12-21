@@ -1,0 +1,73 @@
+// /*--------------------------------------------------------------
+// - Fonts Web
+// --------------------------------------------------------------*/
+
+// $f-12:12px;
+$f-14:14px;
+$f-16:16px;
+$f-18:18px;
+$f-20:20px;
+$f-22:22px;
+$f-28:28px;
+$f-30:30px;
+$f-40:40px;
+
+.font-title-small{
+	font-family: 'Prompt', sans-serif;
+	font-size: 12px;
+}
+.font-title{
+	font-family: 'Prompt', sans-serif;
+	font-size: 14px;
+}
+.font-title-big{
+	font-family: 'Prompt', sans-serif;
+	font-size: 16px;
+}
+
+.font-small-th{
+	font-family: 'Sarabun', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+.font-th{
+	font-family: 'Sarabun', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.font-big-th{
+	font-family: 'Sarabun', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.font-small-en{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+.font-en{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+.font-big-en{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.f-14{font-size: $f-14;}
+.f-16{font-size: $f-16;}
+.f-18{font-size: $f-18;}
+.f-20{font-size: $f-20;}
+.f-22{font-size: $f-22;}
+.f-28{font-size: $f-28;}
+.f-30{font-size: $f-30;}
+.f-40{font-size: $f-40;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.font-bold{font-weight: 700;}

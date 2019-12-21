@@ -1,0 +1,26 @@
+.bg-cover{
+    z-index: -1;
+    position: relative; 
+    background-position: center center;
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    padding: 160px 0;
+    img{width: 100%;}
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0; bottom: 0; right: 0; left: 0;
+        background-color: $gray1;
+        opacity: 0.65;
+        z-index: -1;
+    }
+    &.about-cover{
+        background-image: url("../source/images/about-cover.jpg");
+    }
+    &.fulfillment-cover{
+        background-image: url("../source/images/store-cover.jpg");
+    }
+    &.software-cover{
+        background-image: url("../source/images/store-cover.jpg");
+    }
+}

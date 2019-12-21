@@ -1,0 +1,38 @@
+{
+  "name": "html-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp develop",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/chonlatee/html-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/chonlatee/html-template/issues"
+  },
+  "homepage": "https://gitlab.com/chonlatee/html-template#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "7",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.5",
+    "browser-sync": "^2.26.7",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  }
+}

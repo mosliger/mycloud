@@ -1,0 +1,152 @@
+.accordion input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}  
+/* accordion styles */
+.accordion-list {
+    overflow: hidden;
+}
+
+.accordion {
+    overflow: hidden;
+    border-bottom: 1px solid $gray3;
+}
+.accordion-label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    // background: #2c3e50;
+
+/* Icon */
+}
+// .accordion-label:hover {
+//     background: #1a252f;
+// }
+.accordion-label::after {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    color: $primary;
+    font-size: 22px;
+    transition: all .35s;
+}
+.accordion-content {
+    max-height: 0;
+    padding: 0 1em;
+    background-color: $gray5;
+    .menu-categories li:before{display: none;}
+}
+// .accordion input:checked + .accordion-label {
+//     background: #1a252f;
+// }
+.accordion input:checked + .accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.accordion input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 1em;
+    .menu-categories li:before{display: block;}
+}
+
+.accordion-list.faqs{
+    .accordion.faqs{
+        margin: 0 auto;
+        width: 90%;
+        border: 1px solid $gray3;
+        border-bottom: none;
+        &:first-child{border-radius: 10px 10px 0 0;}
+        &:last-child{border-bottom: 1px solid $gray3; border-radius: 0 0 10px 10px;}
+        .accordion-label{
+            @include transition(.3s);
+            h2{font-size: 22px;}
+            &:hover{background-color: $primary; color: $white; &:after{color: $white;;}}
+        }
+        .accordion-content{
+            background-color: #EFFFFA;
+            .faqs-list-conent{
+                @include clearul();
+                padding: 10px 50px;
+                li{
+                    padding: 14px 10px;
+                    transition: all .25s ease-in;
+                    position: relative;
+                    &:before{
+                        content: "\f111";
+                        position: absolute;
+                        font-family: 'FontAwesome';
+                        color: $primary;
+                        font-size: 10px;
+                        left: -16px;
+                    }
+                }
+            }
+            p{margin: 0; padding: 10px 50px;}
+        }
+    } 
+}
+.accordion.faqs input:checked ~ .accordion-label {
+    background-color: $primary;
+    color: $white;
+    &:after{color: $white;}
+}
+// .accordion.faqs input:checked + .accordion-label::after {
+//     -webkit-transform: rotate(90deg);
+//     transform: rotate(90deg);
+// }
+// .accordion.faqs input:checked ~ .accordion-content {
+//     max-height: 100vh;
+//     padding: 1em;
+//     .menu-categories li:before{display: block;}
+// }
+
+
+.pure-tree {
+    @include clearul(); text-align: left; display: block; 
+    &.main-tree {width: 100%;}
+    &:not(.main-tree){
+        li{overflow: hidden; height: 0; display: block;}
+    }
+    label {
+        @extend .font-title;
+        cursor: pointer; display: flex; justify-content: space-between; 
+        color: $gray2;  padding: 14px 10px; border-bottom: 1px solid $gray3;
+        &:after{
+            content: "\f107"; 
+            font-family: 'FontAwesome';
+            display: inline-block;
+        }
+        &:hover{
+            color: $gray1; border-top: 1px solid $gray2; border-bottom: 1px solid $gray2;
+        }
+        &.main{
+            @extend .font-title-big; display: flex; justify-content: space-between; color: $gray1; font-weight: 700; font-size: 20px;
+            &:after{
+                content: "\f067";
+                font-family: 'FontAwesome';
+            }
+        }
+        &.active{color: $gray1; font-weight: 700;}
+    }
+    .pure-tree_link{
+        a{
+            @extend .font-title;
+            padding: 16px 20px;
+            display: block;
+            color: $gray2;
+            text-decoration: none;
+            &:hover {color: $gray1;}
+            &.active{color: $gray1;}
+        }
+    }
+    &.nested{padding-left: 1.7em;}
+    [type="checkbox"]{
+        display: none;
+        &:checked + label {background-color: $gray5;}
+        &:checked + label:after{content: "\f106";}
+        &:checked + label.main:after{content: "\f068";}
+        &:checked ~ ul > li{height: auto;}
+    }
+}

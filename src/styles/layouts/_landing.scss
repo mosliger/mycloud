@@ -1,0 +1,69 @@
+.banner-landing {
+  > iframe {
+    width: 100%;
+    height: 664px;
+  }
+}
+.banner-landing.e-commerce {
+  display: block;
+  height: 500px;
+  background-size: cover;
+  background-position: 0 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include BREAKPOINT(M) {
+   height: 100vh;
+   padding: 0 20px;
+  }
+  > .logo {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    @include BREAKPOINT(M) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  > .content {
+    text-align: center;
+    .title {
+      font-family: Prompt;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.53;
+      color: #ffffff;
+    }
+    .sub-title {
+      font-family: Prompt;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.53;
+      color: #ffffff;
+    }
+    a {
+      color: #333333;
+      display: inline-block;
+      margin-top: 50px;
+      padding: 10px 40px;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+       > span {
+         margin-left: 10px;
+         font-family: Prompt;
+         font-size: 24px;   
+         vertical-align: middle;    
+       }
+    }
+  }
+}
+.title-page {
+  h1 {
+    color: $primary;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+}

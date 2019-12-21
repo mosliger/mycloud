@@ -1,0 +1,83 @@
+.blog-content{
+    .cover{img{width: 100%;} position: relative;}
+    .content{
+        background: $white;
+        padding: 100px 150px 50px;
+        margin: -400px auto 0 auto;
+        position: relative;
+        .content-header{
+            text-align: center;
+            .nav{justify-content: center; margin: 40px 0 30px;}
+            h1{line-height: 1.6; margin-bottom: 50px;}
+            .content-picture{position: relative; margin-bottom: 50px; img{width: 100%;}}
+        }
+        //for medium editor
+        .content-body{
+            h2{margin: 30px 0;}
+            h3{
+                margin: 0;
+                font-family: 'Prompt', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.5;
+                margin: 20px 0;
+            }
+            blockquote{margin: 0;}
+            blockquote p{
+                margin: 50px 0; border-left: 5px solid $primary; padding: 50px;
+                &:before,&:after{
+                    content: "";
+                    height: 40px;
+                    width: 50px;
+                    position: absolute;
+                    z-index: -1;
+                }
+                &:before{background-image: url("../source/svg/quote-L.svg"); top: 30px; left: 30px;}
+                &:after{background-image: url("../source/svg/quote-R.svg"); right: 30px;}
+            }
+            p{@extend .font-big-en; margin: 22px 0; color: $gray2; line-height: 1.6; position: relative; z-index: 0;}
+            b {color: $gray1;}
+            a {color: $primary; font-weight: 700; text-decoration: underline; &:hover{color: darken($primary, 10%);}}
+        }
+        .content-tags{
+            .head{display: flex; justify-content: space-between; border-bottom: 1px solid $primary; 
+                margin-top: 50px; padding: 30px 0;}
+            .tags-content{
+                display: flex; padding: 30px 0;
+                .tags{width: 100%;}
+                h3{width: 80px;}
+            }
+        }
+        .content-footer{
+            .content-footer-title{
+                margin-bottom: 30px;
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                &:after {
+                    content: '';
+                    right: 0;
+                    position: absolute;
+                    top: 50%;
+                    display: inline-block;
+                    left: 180px;
+                    height: 1px;
+                    background-color: $primary;
+                }
+            }
+            .related-content{
+                display: flex; justify-content: space-between;
+                .blog-list{
+                    width: 49%;
+                    span{margin: 14px 0 10px;}
+                    .nav{margin: 20px 0;}
+                }
+            }
+        }
+    }
+    .sharing-box.is-stuck {
+        position: absolute;
+        top: 0;
+        left: -100px;
+    }
+}

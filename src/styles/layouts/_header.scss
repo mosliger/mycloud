@@ -1,0 +1,77 @@
+.header{
+	color: $gray1;
+	position: fixed;
+	z-index: 5;
+	background-color: $white;
+	right: 0;
+	left: 0;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header .top-bar{
+	background: $primary;
+	height: 30px;
+	padding: 0 40px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $white;
+	z-index: 2;
+}
+
+.top-bar {
+	.service{
+		position:absolute; 
+		margin: 0 auto; 
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}
+	.top-social{
+		@include clearul(); display: inline-flex; z-index: 1;
+		li{display: flex; align-items: center; text-align: center;}
+	}
+	.menu {@include clearul(); display: inline-flex; z-index: 1;}
+	.sub-menu {@include clearul(); display: inline-flex;}
+}
+
+.header .menu-nevigation {height: 70px; padding: 0 40px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.menu-nevigation{
+	.logo{height: 30px;}
+	.menu-icon {display: none; i{padding-left: 10px; }}
+	.block-nevigation {display: flex; flex-direction: row;}
+}
+
+.menu-nevigation .block-nevigation{
+	.mobile-language{display: none; text-align: center;}
+	.mobile-button-quote{display: none;}
+	.nevigation{display: flex; flex-direction: row; @include clearul(); a{text-decoration: none; color: #333333;}}
+	.service-time{
+		margin-left: 50px; display: flex; flex-direction: row; align-items: center; color: $gray1;
+		.contact{
+			i{padding: 0 10px;} 
+			img{padding: 0 8px;} margin-right: 10px; display: flex; flex-direction: column; justify-content: space-around;
+			a {margin: 6px 0px;}
+			p{margin: 0; line-height: 2;} 
+		}
+		// .open-time{ 
+		// 	span{color: $gray2;}i{padding: 0 10px; font-size: 14px;} 
+		// 	p{margin: 0; line-height: 2;} 
+		// 	p:last-child{padding-left: 30px;}
+		// }
+	}
+}
+
+.sub-nevigation{
+	padding: 110px 50px 10px 40px;
+	border-bottom: solid 1px $gray3;
+	background-color: $gray4;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	p{margin: 10px 0;}
+}

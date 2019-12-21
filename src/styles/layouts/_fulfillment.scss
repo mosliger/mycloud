@@ -1,0 +1,125 @@
+.fulfillment{ 
+    display: flex;
+    flex-direction: column;
+    .side-bar{padding: 80px 00px;}
+    .D-9{padding: 80px 60px;}
+    h1{z-index: 1; color: lighten($primary, 10%); text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1); text-align: center;}
+    h2{z-index: 1; color: $primary; text-align: center;}
+    p {color: $gray2; line-height: 1.8; text-indent: 30px;
+        &.font-big-th{color: $gray1;}
+    }
+    .column-flex img{margin: 0;}
+}
+.fulfillment.price{
+    .price-item{
+        border: 3px solid $primary;
+        text-align: center;
+        padding: 30px 20px;
+        p{margin: 0; text-indent: 0; color: $gray1;}
+        .details{
+            display: flex;
+            margin: 20px 0;
+            .store {width: 50%; border-right: 2px solid $primary; display: flex; justify-content: space-between; flex-direction: column;}
+            .pack {width: 50%; .tiny{@extend .font-small-th; font-size: 12px;}}
+            .price{@extend .font-title; font-weight: 700; font-size: 28px; color: $primary; line-height: 1.5;}
+            .font-small-th{color: $gray2;}
+        }
+    }
+    .package{
+        border-bottom: 1px solid $primary; padding: 20px 0; margin: 0 20px;
+        .text-right p{@extend .font-title; font-size: 20px;  color: $primary;}
+        p{margin: 0; text-indent: 0; @extend .font-th;}
+        .tiny{@extend .font-small-th; font-size: 12px; margin: 0 auto; margin-top: 10px;}
+        &:last-child{border-bottom: none;}
+    }
+}
+//About + Fulfillment + Software
+.row-flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.column-flex {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 5px;
+    &.about-gallery{flex: 33%; max-width: 33%;}
+}
+.column-flex img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+//Fulfillment + Software
+.pic-gallery{
+    margin-top: 10px; padding: 20px; border: 1px solid $gray4; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+    h2{margin: 20px 0 10px;}
+    img{width: 100%;}
+}
+.pic-gallery{
+    .slick-track{display: flex; align-items: center;}
+    .gallery-slick{display: flex; justify-content: center; position: relative;}
+    .gallery-slick .gallery-item{height: 100%;}
+    .slick-dots{
+        @include clearul();
+        display: flex !important;
+        position: absolute;
+        bottom: 10px;
+        li{
+            cursor: pointer;
+            margin: 0 8px;
+        }
+        li button{
+            cursor: pointer;
+            font-size: 0;
+            padding: 0;
+            border: 0;
+            outline: none;
+            background: transparent;
+        }
+        li button:before{
+            content: "\f111";
+			font-family: 'FontAwesome';
+			color: $gray3;
+            font-size: 14px;
+            opacity: 0.5;
+            -webkit-font-smoothing: antialiased;
+        }
+        li.slick-active button:before{opacity: 0.8; color: $gray3;}
+    }
+    .slick-arrow{
+        cursor: pointer;
+        position: relative;
+        padding: 0;
+        border: none;
+        font-size: 0;
+        outline: none;
+        background: transparent;
+        z-index: 1;
+        &.slick-prev:before, &.slick-next:before{
+			font-family: 'FontAwesome';
+            font-size: 50px;
+            line-height: 1;
+            opacity: .75;
+            color: $gray3;
+            -webkit-font-smoothing: antialiased;
+            position: absolute;
+            text-shadow: 0px 3px 0 rgba(0, 0, 0, 0.3);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &.slick-next:before {
+            content: "\f105";
+            right: 15px;
+        }
+        &.slick-prev:before {
+            content: "\f104";
+            left: 15px;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,16 @@
+
+section.category {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  .wrap-image > div {
+    margin-bottom: 30px;
+    @include BREAKPOINT(M) {
+     text-align: center;
+    }
+  }
+  .wrap-image img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,124 @@
+.partner{
+    text-align: center;
+    h1{z-index: 1; color: lighten($primary, 10%); text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1); text-align: center;}
+    h2{color: $primary; margin: 50px 0;}
+    p {padding: 0 30px;}
+    .logo-partner{
+        text-align: center;
+        h2{margin: 80px 0 20px; color: $gray1;}
+        .logo-list{
+            @include clearul();
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            li{
+                img{width: 100%; padding: 20px 10px;}
+                margin: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+                border: solid 1px $gray3;
+                width: 20%;
+            }
+        }
+        &:last-child{margin-bottom: 80px;}
+    }
+}
+
+.media{
+    h1{z-index: 1; color: lighten($primary, 10%); text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1); text-align: center;}
+    .media-header{
+        text-align: center;
+        h2{color: $primary; margin: 50px 0 30px;}
+        p {margin-bottom: 50px;}
+    }
+}
+
+.client{
+    h1{z-index: 1; color: lighten($primary, 10%); text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1); text-align: center;}
+    .section-5{background-color: $gray5;}
+}
+
+.awards{
+    h1{z-index: 1; color: lighten($primary, 10%); text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1); text-align: center;}
+    .awards-header{
+        text-align: center;
+        h2{color: $primary; margin: 50px 0 30px;}
+        p {margin-bottom: 50px;}
+    }
+    .awards-item{
+        img{width: 100%;} 
+        margin-bottom: 30px;
+        .nav{
+            margin-top: 10px;
+            box-shadow: 1px 1px 7px -4px rgba(0, 0, 0, 1);
+            background-color:rgba(2, 196, 136, 0.2);
+            width: 100%;
+            .pic{width: 100px; box-shadow: 1px 1px 7px -4px rgba(0, 0, 0, 1);}
+            .text{
+                p{margin: 0;}
+                padding: 0 20px;
+                line-height: 1.5;
+                color: $primary;
+            }
+        }
+    }
+}
+
+.skin-syrup{
+    h1{z-index: 1; color: lighten($primary, 10%); text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1); text-align: center;}
+    h2{text-align: center; color: $primary; margin: 50px 30px;}
+    h3{color: $primary;}
+    .video {width: 100%; position: relative; text-align: center;}      
+    img{width: 100%;}
+    .row{margin: 50px 0;}
+    .D-7, .D-12{padding: 80px 50px; background-color: $gray5; }
+    p{line-height: 2;}
+}
+
+.warrix{
+    h1{z-index: 1; color: lighten($primary, 10%); text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1); text-align: center;}
+    h2{text-align: center; color: $primary; margin: 50px 30px;}
+    .video {width: 100%; position: relative; text-align: center;}      
+    .warrix-header{
+        margin: 50px 0;
+        background-image: url("../source/images/warrix2.png");
+        background-position: center center;
+        background-size: 100% auto; 
+        background-repeat: no-repeat;
+        padding: 100px 0;
+        .container{position: relative; img{width: 200px;}}
+        .description{
+            position: absolute;
+            right: 30px;
+            top: -70px;
+            h3{font-size: 20px; color: $primary;}
+            span{color: $gray1;}
+            p{width: 200px; color: $gray2; margin: 0; line-height: 1.6;}
+        }
+    }
+    .warrix-body{
+        img{width: 100%;}
+    }
+    ul.warrix{
+        @include clearul();
+        li{
+            position: relative;
+            padding: 8px 0;
+            padding-left: 20px;
+            &:before{
+                content: "\f041";
+                position: absolute;
+                font-family: 'FontAwesome';
+                color: #F1563C;
+                left: 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .warrix-footer{
+        margin-top: 50px; padding: 50px; background-color: $gray5;
+        h3{color: $primary;}
+        img{padding: 50px; width: 100%;}
+    }
+}

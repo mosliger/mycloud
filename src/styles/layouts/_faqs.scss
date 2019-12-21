@@ -1,0 +1,18 @@
+.faqs{
+    margin-bottom: 100px;
+    .faqs-header {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url("../source/images/faqs-cover.jpg");
+        background-position: center center;
+        padding: 160px 0;
+        background-size: 100% auto; 
+        background-repeat: no-repeat;
+        img{height: 50px;}
+        h1{margin: 30px 50px;}
+    }
+}

@@ -1,0 +1,63 @@
+section.warehouse-management {
+  padding-bottom: 30px;
+  @include title-section();
+  > .container > .description {
+    > div {
+      font-family: Sarabun;
+      font-size: 18px;
+      font-weight: bold;
+      color: $gray1;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+    > p {
+      font-family: Sarabun;
+      font-size: 16px;
+      font-weight: normal;
+      color:$gray2;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .wrap-items {
+    margin-top: 50px;
+  }
+  .wrap-items > .item {
+    text-align: center;
+    margin-bottom: 28px;
+    > h3 {
+      font-family: Prompt, sans-serif;
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: $primary;
+      font-weight: bold;
+    }
+    > .name {
+      color: $gray1;
+      font-family: Prompt;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    > .detail {
+      font-family: Sarabun;
+      font-size: 18px;
+      font-weight: normal;
+      color: $gray1;
+      margin-bottom: 32px;
+    }
+    > .wrap-image {
+      display: inline-block;
+      width: 190px;
+      height: 190px;
+      border-radius: 100%;
+      background-position: center;
+      overflow: hidden;
+      @include BREAKPOINT(M) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

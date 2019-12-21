@@ -1,0 +1,54 @@
+section.why-fulfillment {
+  background: $lightGray;
+  padding: 60px 0;
+  background-size: unset;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  @include BREAKPOINT(M) {
+    background-size: 0px;
+  }
+  
+  @include title-section();
+  .wrap-card-fulfillment {
+    margin-top: 34px;
+  }
+  .card-fulfillment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    @include BREAKPOINT(M) {
+      margin-bottom: 34px;
+    }
+    > .icon {
+      flex: 0 0 55px;
+      height: 55px;
+      margin-right: 16px;
+      background: $primary;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 10px;
+    }
+    .content {
+      h3 {
+        font-family: Prompt;
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: $primary;
+        font-weight: bold;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+        font-family: Sarabun;
+        font-size: 16px;
+        color: $gray;
+        line-height: 1.5;
+        white-space: pre-wrap;
+      }
+    }
+    
+  }
+}
