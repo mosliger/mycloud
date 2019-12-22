@@ -2,6 +2,9 @@
   > iframe {
     width: 100%;
     height: 664px;
+    @include BREAKPOINT(M) {
+      height: 250px;
+    }
   }
 }
 .banner-landing.e-commerce {
@@ -29,14 +32,14 @@
   > .content {
     text-align: center;
     .title {
-      font-family: Prompt;
+      font-family: 'Prompt', sans-serif;
       font-size: 40px;
       font-weight: bold;
       line-height: 1.53;
       color: #ffffff;
     }
     .sub-title {
-      font-family: Prompt;
+      font-family: 'Prompt', sans-serif;
       font-size: 30px;
       font-weight: bold;
       line-height: 1.53;
@@ -53,7 +56,7 @@
       background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
        > span {
          margin-left: 10px;
-         font-family: Prompt;
+         font-family: 'Prompt', sans-serif;
          font-size: 24px;   
          vertical-align: middle;    
        }

@@ -8,7 +8,7 @@
   }
  }
   h2 {
-    font-family: Prompt;
+    font-family: 'Prompt', sans-serif;
     font-size: 40px;
     font-weight: bold;
     line-height: 1.53;
@@ -33,7 +33,7 @@
       display: block;
       padding: 20px;
       background: #1bab84;
-      font-family: Prompt;
+      font-family: 'Prompt', sans-serif;
       font-size: 16px;
       font-weight: bold;
       line-height: 1.5;
@@ -81,6 +81,10 @@
     }
   }
 
+  .wrap-ship {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .wrap-ship > .item-ship {
     margin-right: 18px;
     margin-bottom: 50px;
@@ -91,7 +95,7 @@
     @include BREAKPOINT(SM) {
       width: 120px;
       margin-bottom: 20px;
-      margin-right: 10px;
+      margin-right: 4px;
     }
     > .wrap-image {
       display: inline-block;
@@ -105,11 +109,10 @@
         width: 100px;
         height: 100px;
       }
-      
     }
     > .name {
       margin-top: 20px;
-      font-family: Prompt;
+      font-family: 'Prompt', sans-serif;
       font-size: 16px;
       font-weight: bold;
       line-height: 1.25;

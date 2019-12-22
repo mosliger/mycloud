@@ -27,7 +27,7 @@ section.price {
         padding: 30px 50px;
       }
       h3 {
-        font-family: Prompt;
+        font-family: 'Prompt', sans-serif;
         font-size: 28px;
         font-weight: bold;
         line-height: 1.54;
@@ -42,10 +42,10 @@ section.price {
       }
       hr {
         height: 0;
-        border: solid 3px #1bab84;
+        border: solid 1px #1bab84;
       }
       .name {
-        font-family: Prompt;
+        font-family: 'Prompt', sans-serif;
         font-size: 40px;
         font-weight: normal;
         line-height: 1.53;
@@ -53,7 +53,7 @@ section.price {
         margin-top: 20px;
       }
       .price {
-        font-family: Prompt;
+        font-family: 'Prompt', sans-serif;
         font-size: 30px;
         line-height: 1.53;
         color: $primary;      
