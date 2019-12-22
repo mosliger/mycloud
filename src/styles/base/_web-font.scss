@@ -12,6 +12,38 @@ $f-28:28px;
 $f-30:30px;
 $f-40:40px;
 
+@font-face {
+	font-family: Prompt;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Prompt'), local('Prompt-Regular'), url(https://fonts.gstatic.com/s/prompt/v4/-W__XJnvUD7dzB2KYNoY.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: Prompt;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Prompt Bold'), local('Prompt-Bold'), url(https://fonts.gstatic.com/s/prompt/v4/-W_8XJnvUD7dzB2C2_8IaWMr.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: Sarabun;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Sarabun Regular'), local('Sarabun-Regular'), url(https://fonts.gstatic.com/s/sarabun/v7/DtVjJx26TKEr37c9aBVJmg.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: Sarabun;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Sarabun Bold'), local('Sarabun-Bold'), url(https://fonts.gstatic.com/s/sarabun/v7/DtVmJx26TKEr37c9YK5silss7g.ttf) format('truetype')
+}
+
 .font-title-small{
 	font-family: 'Prompt', sans-serif;
 	font-size: 12px;
