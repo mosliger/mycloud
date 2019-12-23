@@ -82,7 +82,7 @@ section.testimonial {
       margin-left: 40px;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       width: 340px;
-      height: 280px;
+      min-height: 280px;
       padding: 20px;
       @include BREAKPOINT(SM) {
         width: 100%;
@@ -92,9 +92,12 @@ section.testimonial {
         flex: 1 1 auto;
         display: flex;
         align-items: center;
+        position: relative;
+        z-index: 3;
       }
       .quotation {
-       flex: 0 0;
+        flex: 0 0;
+        z-index: 3;
         display: flex;
         justify-content: flex-start;
         &.end {
@@ -102,6 +105,38 @@ section.testimonial {
           img {
             transform: rotateY(180deg);
           }
+        }
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: $white;
+        z-index: 2;
+      }
+      >i.icon {
+        z-index: 1;
+        position: absolute;
+        bottom: -16px;
+        left: 20px;
+        width: 30px;
+        height: 20px;
+        @include BREAKPOINT(SM) {
+          left: 60px;
+        }
+        filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.16));
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: $white;
+          clip-path: polygon(100% 0, 0 0, 0 100%);
         }
       }
     }
@@ -125,6 +160,7 @@ section.testimonial {
         font-family: 'Prompt', sans-serif, sans-serif;
         line-height: 1.5;
         font-size: 14px;
+        text-align: left;
       }
     }
   }
