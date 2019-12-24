@@ -33,6 +33,13 @@ section.contact {
         margin-bottom: 10px;
         display: block;
       }
+      select {
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0px;
+      }
     }
     h2 {
       font-family: 'Prompt', sans-serif;
